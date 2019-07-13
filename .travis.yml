@@ -1,0 +1,13 @@
+dist: xenial
+sudo: required
+
+language: cpp
+
+os:
+	- linux
+
+compiler:
+	- gcc
+
+script:
+	- echo "Test message!"
