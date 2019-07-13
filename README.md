@@ -1,5 +1,7 @@
 # The Micro-debugger
 
+[![Build Status](https://travis-ci.org/54markov/micro-debugger.svg?branch=master)](https://travis-ci.org/54markov/micro-debugger)
+
 ## Debugging-tool features
 * GNU Linux
 * x86-64
