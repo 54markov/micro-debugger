@@ -6,7 +6,8 @@ class IDebugger
     public:
         virtual void run(const char* pathTo) = 0;
 
+    
+        virtual ~IDebugger() = default; // TODO
     protected:
-        virtual ~IDebugger() = default;
         IDebugger& operator=(const IDebugger&) = delete;
 };

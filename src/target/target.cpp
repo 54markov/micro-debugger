@@ -48,6 +48,7 @@ int Target::wait(void)
 
 void Target::terminate(void)
 {
+    // TODO: implement this
     return;
 }
 

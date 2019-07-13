@@ -12,4 +12,11 @@ add_subdirectory(debugger)
 add_subdirectory(exception)
 add_subdirectory(target)
 
-target_link_libraries(micro-debuger debugger-lib target-lib exception-lib)
+target_link_libraries(micro-debuger
+                      debugger-factory-lib
+                      debugger-instructions-lib
+                      debugger-breakpoints-lib
+                      debugger-registers-lib
+                      debugger-stack-lib
+                      target-lib
+                      exception-lib)

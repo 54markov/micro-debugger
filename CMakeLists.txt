@@ -7,4 +7,5 @@ enable_testing()
 include_directories(src)
 
 add_subdirectory(src src)
+add_subdirectory(tests tests)
 add_subdirectory(examples examples)

@@ -1,5 +1,5 @@
 #include <debugger/i-debugger.hpp>
-#include <debugger/instruction-debugger.hpp>
+#include <debugger/debugger-factory.hpp>
 
 #include <iostream>
 #include <memory>
@@ -14,7 +14,7 @@ int main(int argc, char* argv[])
 
     try
     {
-        std::shared_ptr<IDebugger> debugger = std::make_shared<InstructionDebugger>();
+        auto debugger = DebuggerFactory::createDebugger(DebuggerType::instructions);
         debugger->run(argv[1]);
     }
     catch (...)
