@@ -4,10 +4,10 @@ sudo: required
 language: cpp
 
 os:
-	- linux
+    - linux
 
 compiler:
-	- gcc
+    - gcc
 
 script:
-	- echo "Test message!"
+    - echo "Test message!"
