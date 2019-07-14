@@ -1,13 +1,11 @@
-dist: xenial
+dist: bionic
 sudo: required
 
 language: cpp
+compiler: gcc
+os: linux
 
-os:
-    - linux
 
-compiler:
-    - gcc
 
 script:
     - echo "Test message!"
