@@ -1,29 +1,22 @@
-# The Micro-debugger
+# Micro Debugger
 
-[![Build Status](https://travis-ci.org/54markov/micro-debugger.svg?branch=master)](https://travis-ci.org/54markov/micro-debugger)
+[![pipeline status](https://gitlab.com/vladislav-markov/micro-debugger/badges/master/pipeline.svg)](https://gitlab.com/vladislav-markov/micro-debugger/-/commits/master)
+[![coverage report](https://gitlab.com/vladislav-markov/micro-debugger/badges/master/coverage.svg)](https://gitlab.com/vladislav-markov/micro-debugger/commits/master)
 
-## Debugging-tool features
-* GNU Linux
-* x86-64
-* C\C++ code debugging
-* Instructions counting
-* SW breakpoint setting
-* Variables inspecting
-* Register dumping
-* Stack unwinding
+## Dependencies
 
-## Build-sytem:
+* c++17
 * cmake
 
-## Code standart:
-* C++17 + boost
+## Debugger features
 
-## CI/CD:
-* github + travis
+* sets breakpoint by address
+* sets breakpoint by source line
+* variables inspecting
+* register dumping
+* stack unwinding
 
-## Interface:
-* console
-* gui (Qt) ??
-
-## Unit-tests:
-* gtest
+## Useful links
+* https://www.linuxjournal.com/article/6100
+* https://eli.thegreenplace.net/tag/debuggers
+* https://blog.tartanllama.xyz/writing-a-linux-debugger-setup/

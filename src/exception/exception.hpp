@@ -1,18 +1,19 @@
 #pragma once
 
 #include <string>
-#include <string.h>
+#include <exception>
 
-class Exception : public std::exception
+
+class Exception : public std::exception 
 {
-    public:
-        Exception(const std::string& err, const int code);
-        ~Exception() = default;
+public:
+    Exception(const std::string &err, const int code = 0);
+    ~Exception() = default;
 
-        virtual const char* what() const noexcept override;
-        int code() const noexcept;
+    virtual const char* what() const noexcept override;
+    int code() const noexcept;
 
-    private:
-        int code_;
-        std::string err_;
+private:
+    int code_;
+    std::string err_;
 };

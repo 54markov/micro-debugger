@@ -1,17 +1,11 @@
 #include <exception/exception.hpp>
 
-Exception::Exception(const std::string& err, const int code)
-    : code_(code), err_(err)
-{
-    ;
-}
+Exception::Exception(const std::string& err, const int code) : code_{code}, err_{std::move(err)} {}
 
-const char* Exception::what() const noexcept
-{
+const char* Exception::what() const noexcept {
     return err_.c_str();
 }
 
-int Exception::code() const noexcept
-{
+int Exception::code() const noexcept {
     return code_;
 }
